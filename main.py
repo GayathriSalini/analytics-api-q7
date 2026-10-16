@@ -21,7 +21,7 @@ app.add_middleware(
 @app.post("/analytics")
 async def analytics(request: Request, x_api_key: Optional[str] = Header(None)):
     # Auth first, before reading the body
-    if not x_api_key or not secrets.compare_digest(x_api_key, API_KEY):
+    if not x_api_key or x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="invalid or missing API key")
 
     try:
