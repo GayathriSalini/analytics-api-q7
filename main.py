@@ -4,7 +4,7 @@ from typing import Optional
 from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjMwMDAyMDdAZHMuc3R1ZHkuaWl0bS5hYy5pbiIsImlhdCI6MTc5MTcwODQyOSwiaXNzIjoiaHR0cHM6Ly9haXBpcGUub3JnIiwiYXVkIjoiYWlwaXBlLWFwaSIsImV4cCI6MTc5MjMxMzIyOX0.p44O53ID5y7UQfeDFZrgiTQwOsw5h0vUd3kV5RUmO04"
+API_KEY = "ak_eghdesoh70o0eqrcfkrrp3gk"
 EMAIL = "24f3000207@ds.study.iitm.ac.in"
 
 app = FastAPI()
